@@ -18,7 +18,9 @@ echo -e "#              you can not use zpx-get on your system              #"
 echo -e "#"                                                                 #"
 echo -e "# there may be in no installer zpanelx compatible for your system  #"
 echo -e "#                                                                  #"
-echo -e "#################################################################### 
+echo -e "####################################################################
+exit 1
 fi
 $zpx $@
+exit 0
 #if [ $2 == upgrade ]
