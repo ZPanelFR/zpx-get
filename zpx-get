@@ -20,8 +20,8 @@ if [ $2 == purge ]
 then
 yum -y erase $3
 else
-fi
 yum $@
+fi
 else
 echo -e "###################################################################"
 echo -e "#              you can not use zpx-get on your system              #"
