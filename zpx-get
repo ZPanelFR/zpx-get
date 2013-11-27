@@ -8,10 +8,12 @@ UP2=dist-upgrade
 UP3=$3
 UP4=$4
 elif [ "$3" == "upgrade" ]
+then
 UP2=$2
 UP3=dist-upgrade
 UP4=$4
 elif [ "$4" == "upgrade" ]
+then
 UP2=$2
 UP3=$3
 UP4=dist-upgrade
