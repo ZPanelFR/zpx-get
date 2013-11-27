@@ -8,15 +8,10 @@
 ######################################################################################
 if [ -f /usr/bin/apt-get ]
 then
-if [ $2 == upgrade ]
-then
-apt-get -y dist-upgrade
-else
-apt-get $@
-fi
+zpx=apt-get
 elif [ -f /usr/bin/yum ]
 then
-yum $@
+zpx=yum
 else
 echo -e "###################################################################"
 echo -e "#              you can not use zpx-get on your system              #"
@@ -25,4 +20,5 @@ echo -e "# there may be in no installer zpanelx compatible for your system  #"
 echo -e "#                                                                  #"
 echo -e "#################################################################### 
 fi
-exit
+$zpx $@
+#if [ $2 == upgrade ]
