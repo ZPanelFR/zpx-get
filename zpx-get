@@ -2,7 +2,7 @@
 # apt-get or yum for zpanelx installer
 if [ -f /usr/bin/apt-get ]
 then
-apt-get $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15
+apt-get $@
 elif [ -f /usr/bin/yum ]
 then
 yum $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15
