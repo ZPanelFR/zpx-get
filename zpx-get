@@ -1,10 +1,10 @@
 #!/bin/bash
 ######################################################################################
-# ZPX-GET FOR ZPANEL FR Team Installer #
-# Created by : andykimpe (andykimpe@gmail.com.com) #
-# Current maintainer : andykimpe (andykimpe@gmail.com.com) #
-# Licensed Under the GPL3 (https://github.com/ZPanelFR/zpx-get/blob/master/LICENSE) #
-# Version 1.0.0 #
+# ZPX-GET FOR ZPANEL FR Team Installer                                               #
+# Created by : andykimpe (andykimpe@gmail.com.com)                                   #
+# Current maintainer : andykimpe (andykimpe@gmail.com.com)                           #
+# Licensed Under the GPL3 (https://github.com/ZPanelFR/zpx-get/blob/master/LICENSE)  #
+# Version 1.0.0                                                                      #
 ######################################################################################
 if [ -f /usr/bin/apt-get ]
 then
