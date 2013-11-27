@@ -1,4 +1,4 @@
 zpx-get
 =======
 
-zpx-get apt-get and yum for zpanelx
+zpx-get apt-get or yum for zpanelx
