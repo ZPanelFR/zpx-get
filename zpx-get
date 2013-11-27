@@ -1,5 +1,11 @@
 #!/bin/bash
-# apt-get or yum for zpanelx installer
+######################################################################################
+#                          ZPX-GET  FOR ZPANEL FR Team Installer                     #
+#                   Created by : andykimpe (andykimpe@gmail.com.com)                 #
+#               Current maintainer : andykimpe (andykimpe@gmail.com.com)             #
+#  Licensed Under the GPL3 (https://github.com/ZPanelFR/zpx-get/blob/master/LICENSE) #
+#                                      Version 1.0.0                                 #
+######################################################################################
 if [ -f /usr/bin/apt-get ]
 then
 apt-get $@
@@ -7,5 +13,10 @@ elif [ -f /usr/bin/yum ]
 then
 yum $@
 else
-echo -e "your systèm and not compatibility"
+echo -e "###################################################################"
+echo -e "#              you can not use zpx-get on your system              #"
+echo -e "#"                                                                 #"
+echo -e "# there may be in no installer zpanelx compatible for your system  #"
+echo -e "#                                                                  #"
+echo -e "#################################################################### 
 fi
