@@ -16,12 +16,7 @@ apt-get $@
 fi
 elif [ -f /usr/bin/yum ]
 then
-if [ $2 == purge ]
-then
-yum -y erase $3
-else
 yum $@
-fi
 else
 echo -e "###################################################################"
 echo -e "#              you can not use zpx-get on your system              #"
