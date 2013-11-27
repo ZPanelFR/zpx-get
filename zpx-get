@@ -8,7 +8,12 @@
 ######################################################################################
 if [ -f /usr/bin/apt-get ]
 then
+if [ $2 == upgrade ]
+then
+apt-get -y dist-upgrade
+else
 apt-get $@
+fi
 elif [ -f /usr/bin/yum ]
 then
 yum $@
@@ -20,3 +25,4 @@ echo -e "# there may be in no installer zpanelx compatible for your system  #"
 echo -e "#                                                                  #"
 echo -e "#################################################################### 
 fi
+exit
