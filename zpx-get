@@ -2,30 +2,30 @@
 # apt-get or yum for zpanelx installer
 if [ -f /usr/bin/apt-get ]
 then
-if [ "$2" == "upgrade" ]
+if [ "$1" == "upgrade" ]
 then
+UP1=dist-upgrade
+UP2=$2
+UP3=$3
+elif [ "$2" == "upgrade" ]
+then
+UP1=$1
 UP2=dist-upgrade
 UP3=$3
-UP4=$4
 elif [ "$3" == "upgrade" ]
 then
+UP1=$1
 UP2=$2
 UP3=dist-upgrade
-UP4=$4
-elif [ "$4" == "upgrade" ]
-then
-UP2=$2
-UP3=$3
-UP4=dist-upgrade
 else
+UP1=$1
 UP2=$2
 UP3=$3
-UP4=$4
 fi
-apt-get $UP2 $UP3 $UP4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15
+apt-get $UP1 $UP2 $UP3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15
 elif [ -f /usr/bin/yum ]
 then
-yum $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15
+yum $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15
 else
 echo -e "your systèm and not compatibility"
 fi
