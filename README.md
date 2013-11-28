@@ -13,6 +13,10 @@ chmod +x /usr/bin/zpx-get
 
 usage
 
+update depots list
+
+zpx-get -y update
+
 install package
 
 zpx-get -y install package
